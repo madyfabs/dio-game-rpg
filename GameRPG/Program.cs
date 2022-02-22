@@ -10,6 +10,7 @@ namespace GameRPG
             Knight cavaleiro = new("Fabricio", 12, "Knight");
 
             Console.WriteLine(cavaleiro);
+            Console.WriteLine(cavaleiro.Attack());
         }
     }
 }
