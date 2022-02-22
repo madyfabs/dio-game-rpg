@@ -7,9 +7,9 @@ namespace GameRPG
     {
         static void Main(string[] args)
         {
-            Hero heroi = new Hero("Fabricio", 12, "Knight");
+            Knight cavaleiro = new("Fabricio", 12, "Knight");
 
-            Console.WriteLine(heroi);
+            Console.WriteLine(cavaleiro);
         }
     }
 }
