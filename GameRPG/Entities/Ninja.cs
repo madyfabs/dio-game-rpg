@@ -1,21 +1,20 @@
 ﻿namespace GameRPG.Entities
 {
-    public class Knight : Hero
+    internal class Ninja : Hero
     {
-        public Knight(string Name, int Level, string Type, int HP, int MP) 
+        public Ninja(string Name, int Level, string Type, int HP, int MP)
         {
             this.Name = Name;
             this.Level = Level;
             this.Type = Type;
             this.HP = HP;
-            this.MP = MP;   
+            this.MP = MP;
         }
 
         public override string Attack()
         {
-            return this.Name + " Atacou com a espadinha!";
+            return this.Name + " Lançou Shurikens!";
         }
-
 
     }
 }

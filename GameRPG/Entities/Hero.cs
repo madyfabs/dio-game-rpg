@@ -28,7 +28,7 @@ namespace GameRPG.Entities
 
         public override string ToString()
         {
-            return this.Name + " "+this.Level + " "+this.Type;
+            return this.Name + " "+this.Level + " "+this.Type+ " "+this.HP+ " "+this.MP;
         }
 
         public virtual  string Attack() {
