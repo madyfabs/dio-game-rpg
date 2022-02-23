@@ -7,10 +7,11 @@ namespace GameRPG
     {
         static void Main(string[] args)
         {
-            Knight cavaleiro = new("Fabricio", 12, "Knight");
+            Knight cavaleiro = new("Fabricio", 12, "Knight", 50, 1);
 
             Console.WriteLine(cavaleiro);
             Console.WriteLine(cavaleiro.Attack());
+            Console.WriteLine(cavaleiro);
         }
     }
 }

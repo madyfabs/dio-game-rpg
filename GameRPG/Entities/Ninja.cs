@@ -13,7 +13,17 @@
 
         public override string Attack()
         {
-            return this.Name + " Lançou Shurikens!";
+            if (this.MP - 4 >= 0)
+            {
+                this.MP -= 4;
+                return this.Name + " Lançou Magia Apocalíptica!";
+            }
+            else
+            {
+                this.MP += 2;
+                return this.Name + " Está sem MP! Recarregando...";
+            }
+
         }
 
     }

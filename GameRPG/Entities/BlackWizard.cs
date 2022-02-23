@@ -18,8 +18,18 @@ namespace GameRPG.Entities
         }
 
         public override string Attack()
-        {
-            return this.Name + " Lançou Magia Apocalíptica!";
+        {   
+            if (this.MP - 17 >= 0)
+            {
+                this.MP -= 17;
+                return this.Name + " Lançou Magia Apocalíptica!";
+            }
+            else
+            {
+                this.MP += 8;
+                return this.Name + " Está sem MP! Recarregando...";
+            }
+            
         }
 
     }

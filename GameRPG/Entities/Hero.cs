@@ -32,7 +32,7 @@ namespace GameRPG.Entities
         }
 
         public virtual  string Attack() {
-            return "Atacou!";
+            return " ";
         }
 
 

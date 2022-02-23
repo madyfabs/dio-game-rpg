@@ -13,9 +13,18 @@
 
         public override string Attack()
         {
-            return this.Name + " Atacou com a espadinha!";
-        }
+            if (this.MP - 2 >= 0)
+            {
+                this.MP -= 2;
+                return this.Name + " Lançou Magia Apocalíptica!";
+            }
+            else
+            {
+                this.MP += 1;
+                return this.Name + " Está sem MP! Recarregando...";
+            }
 
+        }
 
     }
 }

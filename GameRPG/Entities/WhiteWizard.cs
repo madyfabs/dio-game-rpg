@@ -13,7 +13,17 @@
 
         public override string Attack()
         {
-            return this.Name + " Lançou Magia Elementar!";
+            if (this.MP - 15 >= 0)
+            {
+                this.MP -= 15;
+                return this.Name + " Lançou Magia Apocalíptica!";
+            }
+            else
+            {
+                this.MP += 6;
+                return this.Name + " Está sem MP! Recarregando...";
+            }
+
         }
 
     }
