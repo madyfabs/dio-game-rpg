@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameRPG.Entities
+﻿namespace GameRPG.Entities
 {
     public abstract class Hero
     {   
         public Hero() { }
 
-        public Hero (string Name, int Level, string Type, int HP, int MP)
+        public Hero (string Name, int Level, string Type, int HP, int MP, Item item)
         {
 
             this.Name = Name;
@@ -18,6 +12,7 @@ namespace GameRPG.Entities
             this.Type = Type;
             this.HP = HP;
             this.MP = MP;
+            this.item = item;
         }
 
         public string Name { get; set; }
@@ -25,6 +20,7 @@ namespace GameRPG.Entities
         public string Type { get; set; }
         public int HP { get; set; }
         public int MP { get; set; }
+        public Item item { get; set; }
 
         public override string ToString()
         {
